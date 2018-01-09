@@ -1,0 +1,30 @@
+// turn vowels into numbers
+function encode(string){
+	var enc = string.split("");
+	for (var i = 0; i < string.length; i++){
+  	enc[i] = enc[i].replace("a","1");
+    enc[i] = enc[i].replace("e","2");
+    enc[i] = enc[i].replace("i","3");
+    enc[i] = enc[i].replace("o","4");
+    enc[i] = enc[i].replace("u","5");
+  }
+  var jnc = enc.join("");
+  
+	return jnc
+  
+}
+
+//turn numbers back into vowels
+function decode(string){
+var enc = string.split("");
+	for (var i = 0; i < string.length; i++){
+  	enc[i] = enc[i].replace("1","a");
+    enc[i] = enc[i].replace("2","e");
+    enc[i] = enc[i].replace("3","i");
+    enc[i] = enc[i].replace("4","o");
+    enc[i] = enc[i].replace("5","u");
+  }
+  var jnc = enc.join("");
+  
+	return jnc
+}

@@ -1,0 +1,10 @@
+function bandNameGenerator(str) {
+
+  if (str.endsWith(str.charAt(0))==true){
+    var fc = str.replace(str.charAt(0), str.toUpperCase().charAt(0));
+    var fc = fc.replace(fc.charAt(str.length-1), '');
+  return fc+str
+  } else{
+    return 'The '+ str.replace( str.charAt(0), str.toUpperCase().charAt(0))
+  }
+}

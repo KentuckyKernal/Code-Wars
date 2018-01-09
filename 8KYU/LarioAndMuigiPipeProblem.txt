@@ -1,0 +1,10 @@
+function pipeFix(numbers){
+var arr =[];
+var end = numbers.pop();
+var start = numbers.shift();
+
+for (var i = start; i < end+1; i++){
+  arr.push(i)
+}
+return arr
+}

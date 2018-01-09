@@ -1,0 +1,19 @@
+function DNAStrand(dna){
+
+  var arr = dna.split("");
+  
+  for (var i = 0; i < dna.length; i++){
+   arr[i] = arr[i].replace("A", "a");
+   arr[i] = arr[i].replace("a","t")
+   arr[i] = arr[i].replace("T", "A");
+   arr[i] = arr[i].replace("C","c");
+   arr[i] = arr[i].replace("c","g");
+   arr[i] = arr[i].replace("G","C");
+  }
+  
+  var jn = arr.join("");
+  var up = jn.toUpperCase();
+  
+  return up
+  
+}

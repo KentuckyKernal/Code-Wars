@@ -1,0 +1,35 @@
+function lifePathNumber(dateOfBirth) {
+  var patt1 = /-/g;
+  var newone = dateOfBirth.replace(patt1,"");
+  var newArr = newone.split("").map(Number);
+  var year = newArr.slice(0, 4);
+  var month = newArr.slice(4, 6);
+  var day = newArr.slice(6, 8);
+  var yearsum = year.reduce(function(total, amount){
+  return total+amount
+  });
+  var monthsum = month.reduce(function(total, amount){
+  return total+amount
+  })
+  var daysum = day.reduce(function(total, amount){
+  return total+amount
+  })
+  var final_Res = yearsum+monthsum+daysum;
+  var final = final_Res.toString().split("").map(Number);
+  var lifenum = final.reduce(function(total, amount){
+  return total+amount
+  })
+  
+  if (lifenum == 10){
+  return 1
+  }
+  else if (lifenum == 11 ){
+  return 2
+  }
+  else if(lifenum == 12){
+  return 3
+  }
+  else {
+  return lifenum
+  }
+}

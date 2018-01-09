@@ -1,0 +1,10 @@
+function summy(stringOfInts){
+     var sum = 0;
+     var stringOfInts = stringOfInts.split(' ').map(Number);
+     for(var i = 0; i < stringOfInts.length; i++){
+     sum += stringOfInts[i];
+     }
+    return(sum)
+    
+    
+}

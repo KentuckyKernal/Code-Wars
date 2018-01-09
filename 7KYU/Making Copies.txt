@@ -1,0 +1,9 @@
+function copyList(l){
+  var t = [];
+  for (var i = 0; i < l.length; i++){
+  t.push(l[i])
+  }
+  return t
+  
+  
+}

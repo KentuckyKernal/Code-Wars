@@ -1,0 +1,17 @@
+function isKiss( words ){
+  var array = words.split(" ");
+  var wordlength = array.length;
+  var KISS = 0;
+
+  for (var i =0; i <array.length; i++){
+    if (array[i].length - wordlength <= 0) {
+      var KISS = KISS + 1;
+    }
+  }
+  
+  if (KISS < wordlength){
+  return "Keep It Simple Stupid"
+  }else{
+  return "Good work Joe!"
+  }
+}

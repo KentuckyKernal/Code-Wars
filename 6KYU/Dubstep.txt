@@ -1,0 +1,12 @@
+function songDecoder(song){
+  
+    for(var i=0; i < song.length; i++){
+    
+    var song = song.replace(/WUB/gi," ");
+    var song = song.replace(/  /gi," ");
+    }
+    //remove white space
+    var song = song.trim();
+    
+  return(song)
+}

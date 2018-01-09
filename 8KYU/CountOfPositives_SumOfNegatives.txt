@@ -1,0 +1,27 @@
+function countPositivesSumNegatives(input) {
+ if (input == null || input.length == 0){
+    return [];
+}else {
+  var positive = [];
+  var negative = [];
+  var count = 0;
+  var total = 0;
+  
+  for (var i = 0; i < input.length; i ++){
+  	if (input[i] < 0 ){
+      negative.push(input[i]);
+      
+    } else if (input[i] > 0){
+      positive.push(input[i]);
+      count += 1;
+    }
+  }
+  
+  for(var i = 0; i < negative.length; i++){
+        total += negative[i];
+      }
+ 
+  return [count, total]
+}
+
+}

@@ -1,0 +1,10 @@
+function valAndUnits(s) {
+
+var storeNum = s.replace(/[abcdefghijklmnopqrstuvwxyz%]/g, "");
+var storeChar = s.replace(/[.123456789-]/g, "").trim();
+var storeNum = parseFloat(storeNum);
+
+var final = {val: storeNum, units: storeChar};
+
+return final
+}

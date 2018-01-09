@@ -1,0 +1,8 @@
+function lifePathNumber(dateOfBirth) {
+  var patt1 = /-/g;
+  var newone = dateOfBirth.replace(patt1,"");
+  var newArr = newone.split("").map(Number);
+  var year = newArr.slice(0, 4);
+  var month = newArr.slice(4, 6);
+  var day = newArr.slice(6, 8);
+Life Path Number

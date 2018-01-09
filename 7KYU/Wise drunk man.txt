@@ -1,0 +1,16 @@
+function wdm(talk){
+
+  var arr = [];
+  var talk = talk.replace(/hiccup/g, "");
+  var talk = talk.replace(/puke/g, "");
+  var talk =talk.split(" ");
+  
+  for (var i = 0; i<talk.length; i++){
+    if(talk[i].length > 1){
+      arr.push(talk[i])
+    } 
+  }
+
+  return arr.join(" ")
+
+}

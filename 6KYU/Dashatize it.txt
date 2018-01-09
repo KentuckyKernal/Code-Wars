@@ -1,0 +1,47 @@
+function dashatize(num) {
+  //get 'emsdasd
+if (isNaN(num)){
+return ('NaN')
+}else{
+
+
+var arr= [];
+var niche = num.toString().split("");
+
+for (var i = 0; i < niche.length; i++){
+if(niche[i] == "2" || niche[i] == "4" || niche[i] == "6"|| niche[i] == "8" || niche[i] == "0"){
+arr.push(niche[i]);
+}
+if(niche[i] == "7" || niche[i] == "1" || niche[i] == "3" || niche[i] == "5" || niche[i] == "9" ){
+arr.push("-");
+arr.push(niche[i]);
+arr.push("-");
+}
+}
+
+//trim off the unwanted dasheses
+//start
+if (arr[0] == "-" ){
+arr.reverse();
+arr.pop();
+arr.reverse();
+} 
+//end
+arr.reverse();
+if (arr[0] == "-"){
+arr.reverse();
+arr.pop();
+} else{
+arr.reverse();
+} 
+//end of trimming
+
+var arr= arr.join("");
+
+for (var j = 0; i < arr.length; i++){
+var arr = arr.replace("--","-");
+}
+
+return(arr)
+}
+};

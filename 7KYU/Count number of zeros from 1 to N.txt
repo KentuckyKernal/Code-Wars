@@ -1,0 +1,23 @@
+function countZeros(n) {
+
+  var arr1 = [];
+  var zeroCollect = [];
+  for (var i = 1; i < n+1; i++){
+    arr1.push([i])
+  }
+  
+  var arr1 = arr1.join("");
+  var arr1 = arr1.split("");
+
+  for (var i = 0; i < arr1.length; i++){
+    if (arr1[i] == '0'){
+      zeroCollect.push(arr1[i])
+    }
+  }
+  
+  var zeroCollect = zeroCollect.join("");
+  var final = zeroCollect.length;
+  
+  return final
+
+}

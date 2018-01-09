@@ -1,0 +1,8 @@
+function checkVowel(string, position) {
+ var res = /[aeiou]/;
+ if(string.toLowerCase().charAt(position) == string.match(res)){
+    return true
+  } else{
+  return false
+  }
+};
